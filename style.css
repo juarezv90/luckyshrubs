@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&family=Poppins:wght@100;300;400;500;600;700;800;900&display=swap');
+
+html {
+    font-size: 14px;
+    font-family: 'Poppins', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: grid;
+    grid-template-areas: "header" "nav" "main" "footer";
+    grid-template-rows: 200px 3rem 1fr 200px;
+    gap: 2rem;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    background: lightgray;
+}
+
+h1 {
+    font-size: 3rem;
+}
+
+h2 {
+    font-size: 1.75rem;
+}
+
+header img {
+    display: block;
+    height: 100%;
+    margin-left: auto;
+    margin-right: auto ;
+}
+
+footer img {
+    display: block;
+    height: 100%;
+    margin-left: 1rem;
+}
+
+nav {
+    grid-area: nav;
+    background-color: #26877f ;
+    align-self: center;
+    padding: 1rem;
+    border-radius: 1rem;
+}
+
+nav ul {
+    list-style: none;
+    text-align: center;
+}
+
+nav li {
+    display: inline-block;
+    margin-left: 1em;
+}
+
+nav a {
+    font-size: 1.2em;
+    text-decoration: none;
+    color: black;
+}
+
+nav a:hover {
+    color: #f4bfdb;
+    transition: ease-in 200ms;
+}
+
+main {
+    grid-area: main;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+main section {
+    display: flex;
+    gap: 2rem;
+}
+
+main article {
+    flex: 1;
+    background-color: #26877f ;
+    padding: 1rem;
+    border-radius: 1em;
+}
+
+main article img {
+    display: block;
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    object-position: center;
+}
+
+main article h2 {
+    margin-bottom: 1rem;
+}
+
+main article p {
+    margin-top: 1rem;
+}
+
+#hours {
+    list-style: none;
+    text-align: center;
+}
+
+footer {
+    grid-area: footer;
+    display: flex;
+}
+
+footer div {
+    flex: 1;
+    text-align: end;
+}
+
+footer p {
+    margin-top: 3rem;
+    border-top: 1px solid black;
+}
+
+@media screen and (max-width: 800px) {
+    main section {
+        flex-direction: column;
+    }
+}
